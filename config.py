@@ -1,0 +1,8 @@
+FILE_PATH=""
+CHROMA_PATH=""
+CHUNK_SIZE=50
+CHUNK_OVERLAP=0
+MODEL_NAME="codellama-70b-instruct"
+EMBEDDER_MODEL_NAME="jinaai/jina-embeddings-v2-base-code"
+EMBEDDER_KWARGS = {'device': 'cpu'}
+MAX_REGENERATION_ATTEMPTS=5
