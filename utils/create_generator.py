@@ -7,14 +7,12 @@ from typing import List
 def evaluate_retrieval(relevant_documents: List, min_docs: int = 3) -> bool:
     """
     Evaluates if the retrieved documents meet the satisfaction criteria.
-    In this example, the criteria is to retrieve at least `min_docs` documents.
     """
     return len(relevant_documents) >= min_docs
 
 def rewrite_hyde_doc(query: str, attempt: int) -> str:
     """
     Generates a more refined version of the HyDE document.
-    The `attempt` parameter tracks how many times the document has been rewritten.
     """
     if attempt == 1:
         refinement = "Please expand the explanation, adding more technical details and examples."
